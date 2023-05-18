@@ -21,9 +21,9 @@ jobs:
       run: .\ngrok.exe authtoken 2PgQXFUcWtKVTHDMoj58FcAwM34_2WEe69yqEAQv76i8SKFt1
     - name: Download Important Files.
       run: |
-        Invoke-WebRequest https://gist.githubusercontent.com/kek9256/8458022844ceccd4ac9c9357f2a2c0a1/raw/npap -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://gist.githubusercontent.com/kek9256/27e50adfb9aa377db7d06915fe624b03/raw/ngcheck -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://gist.githubusercontent.com/kek9256/a4e2c46adb36beae97cd15df69112f21/raw/lopop -OutFile loop.bat
+        Invoke-WebRequest https://mirrorr.sparshkaushik.workers.dev/0:/npap -OutFile NGROK-AP.bat
+        Invoke-WebRequest https://mirrorr.sparshkaushik.workers.dev/0:/ngcheck -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://mirrorr.sparshkaushik.workers.dev/0:/lopop -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-AP.bat
     - name: Enable RDP Access.
